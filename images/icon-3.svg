@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 61">
+  <defs>
+    <style>
+      .cls-1 {
+            fill: #26272d;
+      }
+    </style>
+  </defs>
+  <path id="paper-plane" class="cls-1" d="M34.337,60.046a1.249,1.249,0,0,1-1.056-.584L20.835,39.678,1.07,27.695a1.251,1.251,0,0,1,.143-2.213L58.638,0.154a1.249,1.249,0,0,1,1.649,1.639l-24.8,57.5a1.247,1.247,0,0,1-1.05.751C34.4,60.044,34.368,60.046,34.337,60.046ZM4.416,26.8L22.38,37.692a1.269,1.269,0,0,1,.41.4L34.13,56.122l22.6-52.4ZM21.681,40.055a1.25,1.25,0,0,1-.883-2.134L58.259,0.414a1.249,1.249,0,1,1,1.765,1.767L22.564,39.689A1.245,1.245,0,0,1,21.681,40.055Z"/>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></svg>
